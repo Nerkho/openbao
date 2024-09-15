@@ -1581,6 +1581,7 @@ func getCertificateNotBefore(data *inputBundle) (time.Time, error) {
 	var notBefore time.Time
 	var err error
 
+	// notBeforeBound := data.role.NotAfterBound
 	notBeforeAlt := data.role.NotBefore
 
 	if notBeforeAlt == "" {
